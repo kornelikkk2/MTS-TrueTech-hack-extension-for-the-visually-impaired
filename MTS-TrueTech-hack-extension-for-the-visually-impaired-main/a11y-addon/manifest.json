@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "a11y ",
+  "description": "a11y",
+  "version": "1.0",
+  "author": "a11y",
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "js": [
+        "js/content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "commands": {
+  }
+}

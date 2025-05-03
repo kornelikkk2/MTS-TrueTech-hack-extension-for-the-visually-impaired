@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            height: 200px;
+
+            display: flex;
+            flex-direction: row;
+
+        }
+        h2, h3 {
+            margin-top: 0;
+        }
+        .content {
+           flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 50px;
+        }
+        .switch {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .switch button {
+            margin-top: 20px;
+            width: auto;
+            height: 30px;
+            font-size: 12px;
+        }
+        .description {
+            font-size: 12px;
+        }
+        .button-container {
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .svg-container {
+
+        }
+        .img {
+            flex-grow: 1;
+            background-size: contain;
+            width: 165px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h2>Сделайте сайт удобным для себя!</h2>
+
+    <div class="switch">
+        <h3>Обозначение цветов</h3>
+        <button id="replaceWithShapesButton">Помощь дальтоникам</button>
+    </div>
+
+    <p class="description">Описание здесь</p>
+
+    <div class="button-container">
+        <button id="decreaseFontSizeButton">A-</button>
+        <button id="increaseFontSizeButton">A+</button>
+    </div>
+</div>
+
+<div class="svg-container">
+    <img src="../bg.svg" class="img">
+</div>
+
+<script src="../js/popup.js"></script>
+</body>
+</html>
